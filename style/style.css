@@ -338,6 +338,9 @@ button{
 /*-------------------- Section end --------------------*/
 /*-------------------- Responsive Design start --------------------*/
 @media screen and (max-width:576px) {
+    .container{
+        width: 90%;
+    }
     header{
         border: 1px solid #FEA301;
     }
@@ -388,6 +391,7 @@ button{
     .footer{
         padding: 60px 0px;
     }
+
 }
 @media screen and (min-width:576px){
     .nav_icon{
