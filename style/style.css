@@ -1,9 +1,230 @@
-*{
+/*---------------------- Google Fonts Link Added  ----------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/*---------------------- Google Fonts Link Added  ----------------------*/
+/*------------------------- Default css added -------------------------*/
+* {
     margin: 0;
     padding: 0;
     outline: none;
     box-sizing: border-box;
 }
-h1{
-    color: red;
+li {
+    list-style: none;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+button{
+    border: transparent;
+}
+.container{
+    width:80%;
+    margin: 0 auto;
+}
+/*------------------------- Default css added -------------------------*/
+/*---------------------- Google Fonts Classes ----------------------*/
+.quicksand {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style: normal;
+}
+.raleway {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+}
+/*---------------------- Google Fonts Classes ----------------------*/
+/*-------------------- Header And Nav Section start --------------------*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.nav .logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 62px;
+}
+.logo h2{
+    font-size: 32px;
+    line-height: 30px;
+    color: rgb(17, 17, 17);
+    
+}
+.nav .nav_list_main{
+    display: flex;
+    gap:32px;
+}
+.nav_list_main .nav_list{
+    font-size: 20px;
+    line-height: 30px;
+}
+.nav_list_main li:first-child .nav_list {
+    color: rgb(254, 163, 1); 
+}
+.nav_list_main li:nth-child(2) .nav_list {
+    color: rgb(1, 172, 253); 
+}
+
+.nav_list_main li:nth-child(3) .nav_list {
+    color: rgb(5, 212, 223);  
+}
+.nav_list_main li:last-child .nav_list {
+    color: rgb(93, 88, 239);  
+}
+.nav_button button{
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    padding: 10px 60px;
+    border: transparent;
+    cursor: pointer;
+}
+/*-------------------- Header And Nav Section end --------------------*/
+/*-------------------- Banner Section start --------------------*/
+.banner{
+
+}
+.banner .banner_main{
+    display: grid;
+    grid-template-columns: calc(60% - 25px) calc(40% - 25px);    align-items: center;
+    gap: 50px;
+}
+.banner_left h1{
+    font-size: 56px;
+    line-height: 61px;
+    color: rgb(17, 17, 17);
+}
+.banner_left h1 .first_sentents{
+    color: rgb(254, 163, 1);
+}
+.banner_left h1 .second_sentents{
+    color: rgb(1, 172, 253);
+}
+.banner_left p{
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(17, 17, 17);
+    padding: 24px 0px;
+
+}
+.banner_left button{
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    padding: 10px 47px;
+    background-color: black;
+    cursor: pointer;
+    border-radius:12px;
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    -ms-border-radius:12px;
+    -o-border-radius:12px;
+}
+.banner_rihgt img{
+    width: 100%;
+}
+.banner_rihgt{
+    display: flex;
+    justify-content: end;
+}
+/*-------------------- Banner Section end --------------------*/
+/*--------------------Curriculum Section start --------------------*/
+.Curriculum{
+    background: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0px;
+    text-align: center;
+}
+.Curriculum_box_contain{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 28px;
+    margin: 80px 0px;
+
+}
+/*--------------------Curriculum Section end --------------------*/
+/*-------------------- Section start --------------------*/
+/*-------------------- Section end --------------------*/
+/*-------------------- Section start --------------------*/
+/*-------------------- Section end --------------------*/
+/*-------------------- Section start --------------------*/
+/*-------------------- Section end --------------------*/
+/*-------------------- Section start --------------------*/
+/*-------------------- Section end --------------------*/
+/*-------------------- Section start --------------------*/
+/*-------------------- Section end --------------------*/
+/*-------------------- Section start --------------------*/
+/*-------------------- Section end --------------------*/
+/*-------------------- Section start --------------------*/
+/*-------------------- Section end --------------------*/
+/*-------------------- Responsive Design start --------------------*/
+@media screen and (max-width:576px) {
+    header{
+        border: 1px solid #FEA301;
+    }
+    .nav .nav_list_main ,.nav h2, .nav_button{
+        display: none;
+    }
+    .nav_icon{
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .banner .banner_main{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+    .banner_main .banner_rihgt{
+        order: 1;
+    }
+    .banner_main .banner_left{
+        order: 2;
+    }
+    .banner_left h1{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .banner_left p{
+        font-size: 14px;
+        line-height: 18px;
+        padding: 18px 0px;
+    }
+    .banner_left button{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .Curriculum{
+        padding: 40px 0px;
+    }
+    .Curriculum_box_contain{
+        grid-template-columns: 1fr;
+        margin: 0px;
+    }
+}
+@media screen and (min-width:576px){
+    .nav_icon{
+        display: none;
+    }
+}
+/*-------------------- Responsive Design End --------------------*/
