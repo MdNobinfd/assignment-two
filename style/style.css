@@ -160,6 +160,7 @@ button{
     font-size: 46px;
     line-height: 57.5px;
     color: rgb(0, 0, 0);
+    text-align: center;
 }
 .Curriculum_box_contain{
     display: grid;
@@ -245,10 +246,86 @@ button{
     color: #FEA301;
 }
 /*--------------------Curriculum Section end --------------------*/
-/*-------------------- Section start --------------------*/
-/*-------------------- Section end --------------------*/
-/*-------------------- Section start --------------------*/
-/*-------------------- Section end --------------------*/
+/*-------------------- Stories Section start --------------------*/
+.stroies{
+    background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0px;
+}
+.stories_content{
+    padding: 80px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.stroies_left{
+    width: 45%;
+}
+.stroies_right{
+    width: 50%;
+}
+/*-------------------- Stories Section end --------------------*/
+/*--------------------Footer Section start --------------------*/
+.footer{ 
+    background-color: #01ACFD;
+    padding: 123px 0px 174px 0px;
+}
+.footer_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    gap: 32px;
+}
+.footer_left{
+    width: 30%;
+}
+.left_flex{
+    display: flex;
+    gap: 10px;
+}
+.footer_left p{
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    padding-top:35px;
+    font-weight: 400;
+}
+.footer_meddle{
+    width: 20%;
+}
+.footer_right{
+    width: 30%;
+}
+.footer_left img{
+    width: 82px;
+}
+.footer_left h2{
+    font-size: 42.14px;
+    line-height: 39.51px;
+    color: rgb(255, 255, 255);
+}
+.footer_header{
+    font-size: 24px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+}
+.footer_meddle ul{
+    padding-top: 32px;
+}
+.footer_meddle ul li a{
+    display: inline-block;
+   padding-bottom: 20px;
+   font-size: 20px;
+   line-height: 25px;
+   color: rgb(255, 255, 255);
+}
+.footer_media{
+    display: flex;
+    gap: 10px;
+    padding-top: 32px;
+}
+/*--------------------Footer Section end --------------------*/
 /*-------------------- Section start --------------------*/
 /*-------------------- Section end --------------------*/
 /*-------------------- Section start --------------------*/
@@ -301,6 +378,15 @@ button{
     .Curriculum_box_contain{
         grid-template-columns: 1fr;
         margin: 0px;
+    }
+    .footer_left,.footer_meddle,.footer_right{
+        width: 100%;
+    }
+    .footer_main{
+        flex-direction: column;
+    }
+    .footer{
+        padding: 60px 0px;
     }
 }
 @media screen and (min-width:576px){
