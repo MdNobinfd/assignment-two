@@ -3,17 +3,17 @@
 /*---------------------- Google Fonts Link Added  ----------------------*/
 /*------------------------- Default css added -------------------------*/
 * {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 h1,
 h2,
@@ -22,560 +22,569 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-button{
-    border: transparent;
-    cursor: pointer;
+button {
+  border: transparent;
+  cursor: pointer;
 }
-.container{
-    width:80%;
-    margin: 0 auto;
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 /*------------------------- Default css added -------------------------*/
 /*---------------------- Google Fonts Classes ----------------------*/
 .quicksand {
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font-weight:700;
-    font-style: normal;
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 .raleway {
-    font-family: "Raleway", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 /*---------------------- Google Fonts Classes ----------------------*/
 /*-------------------- Header And Nav Section start --------------------*/
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0px;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
 }
-.nav .logo{
-    display: flex;
-    align-items: center;
+.nav .logo {
+  display: flex;
+  align-items: center;
 }
-.logo img{
-    width: 62px;
+.logo img {
+  width: 62px;
 }
-.logo h2{
-    font-size: 32px;
-    line-height: 30px;
-    color: rgb(17, 17, 17);
-    
+.logo h2 {
+  font-size: 32px;
+  line-height: 30px;
+  color: rgb(17, 17, 17);
 }
-.nav .nav_list_main{
-    display: flex;
-    gap:32px;
+.nav .nav_list_main {
+  display: flex;
+  gap: 32px;
 }
-.nav_list_main .nav_list{
-    font-size: 20px;
-    line-height: 30px;
+.nav_list_main .nav_list {
+  font-size: 20px;
+  line-height: 30px;
 }
 .nav_list_main li:first-child .nav_list {
-    color: rgb(254, 163, 1); 
+  color: rgb(254, 163, 1);
 }
 .nav_list_main li:nth-child(2) .nav_list {
-    color: rgb(1, 172, 253); 
+  color: rgb(1, 172, 253);
 }
 
 .nav_list_main li:nth-child(3) .nav_list {
-    color: rgb(5, 212, 223);  
+  color: rgb(5, 212, 223);
 }
 .nav_list_main li:last-child .nav_list {
-    color: rgb(93, 88, 239);  
+  color: rgb(93, 88, 239);
 }
-.nav_button button{
-    border-radius: 12px;
-    background: rgb(254, 163, 1);
-    font-size: 20px;
-    line-height: 30px;
-    color: rgb(255, 255, 255);
-    padding: 10px 60px;
-    border:1px solid transparent;
-    cursor: pointer;
-    transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
-    -webkit-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
-    -moz-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
-    -ms-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
-    -o-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
+.nav_button button {
+  border-radius: 12px;
+  background: rgb(254, 163, 1);
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+  padding: 10px 60px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out;
+  -webkit-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out;
+  -moz-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out;
+  -ms-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out;
+  -o-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out;
 }
-.nav_button button:hover{
-    background-color: white;
-    color: #FEA301;
-    border: 1px solid #FEA301;
+.nav_button button:hover {
+  background-color: white;
+  color: #fea301;
+  border: 1px solid #fea301;
 }
 /*-------------------- Header And Nav Section end --------------------*/
 /*-------------------- Banner Section start --------------------*/
-.banner{
-
+.banner .banner_main {
+  display: grid;
+  grid-template-columns: calc(60% - 25px) calc(40% - 25px);
+  align-items: center;
+  gap: 50px;
 }
-.banner .banner_main{
-    display: grid;
-    grid-template-columns: calc(60% - 25px) calc(40% - 25px);    align-items: center;
-    gap: 50px;
+.banner_left h1 {
+  font-size: 56px;
+  line-height: 61px;
+  color: rgb(17, 17, 17);
 }
-.banner_left h1{
-    font-size: 56px;
-    line-height: 61px;
-    color: rgb(17, 17, 17);
+.banner_left h1 .first_sentents {
+  color: rgb(254, 163, 1);
 }
-.banner_left h1 .first_sentents{
-    color: rgb(254, 163, 1);
+.banner_left h1 .second_sentents {
+  color: rgb(1, 172, 253);
 }
-.banner_left h1 .second_sentents{
-    color: rgb(1, 172, 253);
+.banner_left p {
+  font-size: 20px;
+  line-height: 25px;
+  color: rgb(17, 17, 17);
+  padding: 24px 0px;
 }
-.banner_left p{
-    font-size: 20px;
-    line-height: 25px;
-    color: rgb(17, 17, 17);
-    padding: 24px 0px;
-
+.banner_left button {
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+  padding: 10px 47px;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border: 1px solid transparent;
+  transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out;
+  -webkit-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out;
+  -moz-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out;
+  -ms-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out;
+  -o-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out;
 }
-.banner_left button{
-    font-size: 20px;
-    line-height: 30px;
-    color: rgb(255, 255, 255);
-    padding: 10px 47px;
-    background-color: black;
-    cursor: pointer;
-    border-radius:12px;
-    -webkit-border-radius:12px;
-    -moz-border-radius:12px;
-    -ms-border-radius:12px;
-    -o-border-radius:12px;
-    border: 1px solid transparent;
-    transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
-    -webkit-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
-    -moz-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
-    -ms-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
-    -o-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
+.banner_left button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
-.banner_left button:hover{
-    background-color: white;
-    color: black;
-    border:1px solid black;
+.banner_rihgt img {
+  width: 100%;
 }
-.banner_rihgt img{
-    width: 100%;
-}
-.banner_rihgt{
-    display: flex;
-    justify-content: end;
+.banner_rihgt {
+  display: flex;
+  justify-content: end;
 }
 /*-------------------- Banner Section end --------------------*/
 /*--------------------Marquee Section start --------------------*/
-.marque{
-    padding: 40px 0px 0px 0px;
-    font-size: 36px;
+.marque {
+  padding: 40px 0px 0px 0px;
+  font-size: 36px;
 }
-.marqu_1{
-    color: #FEA301;
+.marqu_1 {
+  color: #fea301;
 }
-.marqu_2{
-    color: #01ACFD;
+.marqu_2 {
+  color: #01acfd;
 }
 /*-------------------- Marquee Section end --------------------*/
 /*--------------------Curriculum Section start --------------------*/
-.Curriculum{
-    background: url(../assets/bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 60px 0px;
-    text-align: center;
+.Curriculum {
+  background: url(../assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0px;
+  text-align: center;
 }
-.Curriculum_header h2{
-    font-size: 46px;
-    line-height: 57.5px;
-    color: rgb(0, 0, 0);
-    text-align: center;
+.Curriculum_header h2 {
+  font-size: 46px;
+  line-height: 57.5px;
+  color: rgb(0, 0, 0);
+  text-align: center;
 }
-.Curriculum_box_contain{
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap: 28px;
-    margin: 80px 0px;
+.Curriculum_box_contain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin: 80px 0px;
 }
-.Curriculum_box{
-    padding: 52px 40px;
-    box-sizing: border-box;
-    border-radius: 18.86px;
-    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
-    border: 0.94px solid rgb(222, 245, 255);
+.Curriculum_box {
+  padding: 52px 40px;
+  box-sizing: border-box;
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(222, 245, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+  border: 0.94px solid rgb(222, 245, 255);
 }
-.Curriculum_box:nth-child(2){
-    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
-    border: 0.94px solid rgb(255, 244, 220);
+.Curriculum_box:nth-child(2) {
+  background: linear-gradient(
+      180deg,
+      rgb(255, 244, 220),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+  border: 0.94px solid rgb(255, 244, 220);
 }
-.Curriculum_box:nth-child(3){
-    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
-    border: 0.94px solid rgb(242, 232, 255);
+.Curriculum_box:nth-child(3) {
+  background: linear-gradient(
+      180deg,
+      rgb(238, 225, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+  border: 0.94px solid rgb(242, 232, 255);
 }
-.Curriculum_box img{
-    max-width: 136px;
+.Curriculum_box img {
+  max-width: 136px;
 }
-.Curriculum_box h3{
-    font-size: 24.52px;
-    line-height: 30.65px;
-    color: rgb(32, 32, 32);
-    padding-top: 30px;
+.Curriculum_box h3 {
+  font-size: 24.52px;
+  line-height: 30.65px;
+  color: rgb(32, 32, 32);
+  padding-top: 30px;
 }
-.Curriculum_box p{
-    font-size: 15.09px;
-    font-weight: 500;
-    line-height: 28.3px;
-    color: rgb(128, 128, 128);
-    padding: 33px 0px;
+.Curriculum_box p {
+  font-size: 15.09px;
+  font-weight: 500;
+  line-height: 28.3px;
+  color: rgb(128, 128, 128);
+  padding: 33px 0px;
 }
-.Curriculum_box button{
-    font-size: 15.09px;
-    line-height: 28.3px;
-    color: rgb(100, 200, 255);
-    background-color: transparent;
-    cursor: pointer;
+.Curriculum_box button {
+  font-size: 15.09px;
+  line-height: 28.3px;
+  color: rgb(100, 200, 255);
+  background-color: transparent;
+  cursor: pointer;
 }
-.Curriculum_box:nth-child(2) button{
-    color: rgb(240, 170, 0);
+.Curriculum_box:nth-child(2) button {
+  color: rgb(240, 170, 0);
 }
-.Curriculum_box:nth-child(3) button{
-    color: rgb(135, 0, 255);
+.Curriculum_box:nth-child(3) button {
+  color: rgb(135, 0, 255);
 }
-.curriculum_bottom{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+.curriculum_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
-.curriculum_bottom .curri_button{
-    background-color:#FEA301;
-    color: white;
-    font-size:26px;
-    line-height: 60px;
-    font-weight: 900;
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    border-radius:50%;
-    -webkit-border-radius:50%;
-    -moz-border-radius:50%;
-    -ms-border-radius:50%;
-    -o-border-radius:50%;
-    border: 1px solid transparent;
-    transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out  ;
-    -webkit-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out  ;
-    -moz-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out  ;
-    -ms-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out  ;
-    -o-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out  ;
+.curriculum_bottom .curri_button {
+  background-color: #fea301;
+  color: white;
+  font-size: 26px;
+  line-height: 60px;
+  font-weight: 900;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid transparent;
+  transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out;
+  -webkit-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out;
+  -moz-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out;
+  -ms-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out;
+  -o-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out;
 }
-.curriculum_bottom .curri_button:hover{
-    border: 1px solid #FEA301;
-    background-color: white;
-    color: #FEA301;
+.curriculum_bottom .curri_button:hover {
+  border: 1px solid #fea301;
+  background-color: white;
+  color: #fea301;
 }
 /*--------------------Curriculum Section end --------------------*/
 /*-------------------- Stories Section start --------------------*/
-.stroies{
-    background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 60px 0px;
+.stroies {
+  background: url(../assets/bg.png),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0px;
 }
-.stories_content{
-    padding: 80px 0px;
-    display: flex;
-    justify-content: space-between;
+.stories_content {
+  padding: 80px 0px;
+  display: flex;
+  justify-content: space-between;
 }
-.stroies_left{
-    width: 45%;
+.stroies_left {
+  width: 45%;
 }
-.stories_box1{
-    background: rgb(255, 255, 255);
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
+.stories_box1 {
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
 }
-.stories_box1 img{
-    width: 100%;
-    border-radius: 16px 16px 0px 0px;
-    -webkit-border-radius: 16px 16px 0px 0px;
-    -moz-border-radius: 16px 16px 0px 0px;
-    -ms-border-radius: 16px 16px 0px 0px;
-    -o-border-radius: 16px 16px 0px 0px;
+.stories_box1 img {
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  -webkit-border-radius: 16px 16px 0px 0px;
+  -moz-border-radius: 16px 16px 0px 0px;
+  -ms-border-radius: 16px 16px 0px 0px;
+  -o-border-radius: 16px 16px 0px 0px;
 }
-.stories_box1 h3{
-    padding: 0px 38px 34px 38px;
-    font-size: 24px;
-    line-height: 38.35px;
-    color: rgb(0, 0, 0);
+.stories_box1 h3 {
+  padding: 0px 38px 34px 38px;
+  font-size: 24px;
+  line-height: 38.35px;
+  color: rgb(0, 0, 0);
 }
-.stories_box1 p{
-    padding: 58px 38px 47px 38px;
-    font-size: 15.34px;
-    font-weight: 500;
-    line-height: 28.76px;
-    color: rgb(102, 102, 102);
+.stories_box1 p {
+  padding: 58px 38px 47px 38px;
+  font-size: 15.34px;
+  font-weight: 500;
+  line-height: 28.76px;
+  color: rgb(102, 102, 102);
 }
 
-.date_position1{
-    position: relative;
-    top: -23px;
-    left: 38px;
+.date_position1 {
+  position: relative;
+  top: -23px;
+  left: 38px;
 }
-.date_position1 h4{
-    font-size: 15.34px;
-    font-weight: 500;
-    text-transform: capitalize;
-    color: rgb(255, 255, 255);
-    padding: 9px 19px;
-    border-radius: 47.93px;
-    -webkit-border-radius: 47.93px;
-    -moz-border-radius: 47.93px;
-    -ms-border-radius: 47.93px;
-    -o-border-radius: 47.93px;
-    background-color: #3CD8E8;
-    display: inline-block;
+.date_position1 h4 {
+  font-size: 15.34px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  padding: 9px 19px;
+  border-radius: 47.93px;
+  -webkit-border-radius: 47.93px;
+  -moz-border-radius: 47.93px;
+  -ms-border-radius: 47.93px;
+  -o-border-radius: 47.93px;
+  background-color: #3cd8e8;
+  display: inline-block;
 }
-.stroies_right{
-    width: 53%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 19px;
+.stroies_right {
+  width: 53%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 19px;
 }
-.stories_box{
-    background: rgb(255, 255, 255);
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
+.stories_box {
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
 }
-.date_position{
-    position: relative;
-    top: -7%;
-    left: 12%;
+.date_position {
+  position: relative;
+  top: -7%;
+  left: 12%;
 }
-.date_position h4{
-    font-size: 15.34px;
-    font-weight: 500;
-    text-transform: capitalize;
-    color: rgb(255, 255, 255);
-    padding: 9px 19px;
-    border-radius: 47.93px;
-    -webkit-border-radius: 47.93px;
-    -moz-border-radius: 47.93px;
-    -ms-border-radius: 47.93px;
-    -o-border-radius: 47.93px;
-    background-color: #95B226;
-    display: inline-block;
+.date_position h4 {
+  font-size: 15.34px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  padding: 9px 19px;
+  border-radius: 47.93px;
+  -webkit-border-radius: 47.93px;
+  -moz-border-radius: 47.93px;
+  -ms-border-radius: 47.93px;
+  -o-border-radius: 47.93px;
+  background-color: #95b226;
+  display: inline-block;
 }
-.stroies_right .stories_box:nth-child(2) .date_position h4{
-    background-color: #5D58F0;
+.stroies_right .stories_box:nth-child(2) .date_position h4 {
+  background-color: #5d58f0;
 }
-.stories_box img{
-    width: 100%;
-    border-radius: 16px 16px 0px 0px;
-    -webkit-border-radius: 16px 16px 0px 0px;
-    -moz-border-radius: 16px 16px 0px 0px;
-    -ms-border-radius: 16px 16px 0px 0px;
-    -o-border-radius: 16px 16px 0px 0px;
+.stories_box img {
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  -webkit-border-radius: 16px 16px 0px 0px;
+  -moz-border-radius: 16px 16px 0px 0px;
+  -ms-border-radius: 16px 16px 0px 0px;
+  -o-border-radius: 16px 16px 0px 0px;
 }
-.stories_box h3{
-    font-size: 15.34px;
-    line-height: 28.76px;
-    color: rgb(0, 0, 0);
-    padding: 0px 0px 34px 37px;
+.stories_box h3 {
+  font-size: 15.34px;
+  line-height: 28.76px;
+  color: rgb(0, 0, 0);
+  padding: 0px 0px 34px 37px;
 }
-.stories_button{
-    text-align: center;
+.stories_button {
+  text-align: center;
 }
-.stories_button button{
-    font-size: 20px;
-    line-height: 30px;
-    color: rgb(255, 255, 255);
-    border-radius: 12px;
-    background: rgb(17, 17, 17);
-    padding: 10px 61px;
-    transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
-    border: 1px solid transparent;
+.stories_button button {
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+  border-radius: 12px;
+  background: rgb(17, 17, 17);
+  padding: 10px 61px;
+  transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out;
+  border: 1px solid transparent;
 }
-.stories_button button:hover{
-    background-color: white;
-    color: black;
-    border:1px solid black;
+.stories_button button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
 /*-------------------- Stories Section end --------------------*/
 /*--------------------Footer Section start --------------------*/
-.footer{ 
-    background-color: #01ACFD;
-    padding: 123px 0px 174px 0px;
+.footer {
+  background-color: #01acfd;
+  padding: 123px 0px 174px 0px;
 }
-.footer_main{
-    display: flex;
-    justify-content: space-between;
-    align-items: self-start;
-    gap: 32px;
+.footer_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+  gap: 32px;
 }
-.footer_left{
-    width: 30%;
+.footer_left {
+  width: 30%;
 }
-.left_flex{
-    display: flex;
-    gap: 10px;
+.left_flex {
+  display: flex;
+  gap: 10px;
 }
-.footer_left p{
-    font-size: 20px;
-    line-height: 25px;
-    color: rgb(255, 255, 255);
-    padding-top:35px;
-    font-weight: 400;
+.footer_left p {
+  font-size: 20px;
+  line-height: 25px;
+  color: rgb(255, 255, 255);
+  padding-top: 35px;
+  font-weight: 400;
 }
-.footer_meddle{
-    width: 20%;
+.footer_meddle {
+  width: 20%;
 }
-.footer_right{
-    width: 30%;
+.footer_right {
+  width: 30%;
 }
-.footer_left img{
-    width: 82px;
+.footer_left img {
+  width: 82px;
 }
-.footer_left h2{
-    font-size: 42.14px;
-    line-height: 39.51px;
-    color: rgb(255, 255, 255);
+.footer_left h2 {
+  font-size: 42.14px;
+  line-height: 39.51px;
+  color: rgb(255, 255, 255);
 }
-.footer_header{
-    font-size: 24px;
-    line-height: 30px;
-    color: rgb(255, 255, 255);
+.footer_header {
+  font-size: 24px;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
 }
-.footer_meddle ul{
-    padding-top: 32px;
+.footer_meddle ul {
+  padding-top: 32px;
 }
-.footer_meddle ul li a{
-    display: inline-block;
-   padding-bottom: 20px;
-   font-size: 20px;
-   line-height: 25px;
-   color: rgb(255, 255, 255);
+.footer_meddle ul li a {
+  display: inline-block;
+  padding-bottom: 20px;
+  font-size: 20px;
+  line-height: 25px;
+  color: rgb(255, 255, 255);
 }
-.footer_media{
-    display: flex;
-    gap: 10px;
-    padding-top: 32px;
+.footer_media {
+  display: flex;
+  gap: 10px;
+  padding-top: 32px;
 }
 /*--------------------Footer Section end --------------------*/
-/*-------------------- Section start --------------------*/
-/*-------------------- Section end --------------------*/
-/*-------------------- Section start --------------------*/
-/*-------------------- Section end --------------------*/
-/*-------------------- Section start --------------------*/
-/*-------------------- Section end --------------------*/
-/*-------------------- Section start --------------------*/
-/*-------------------- Section end --------------------*/
-/*-------------------- Section start --------------------*/
-/*-------------------- Section end --------------------*/
 /*-------------------- Responsive Design start --------------------*/
-@media screen and (max-width:576px) {
-    .container{
-        width: 90%;
-    }
-    header{
-        border: 1px solid #FEA301;
-    }
-    .nav .nav_list_main ,.nav h2, .nav_button,.curriculum_bottom,.stroies_left{
-        display: none;
-    }
-    .nav_icon{
-        font-size: 30px;
-        cursor: pointer;
-    }
-    .banner .banner_main{
-        grid-template-columns: 1fr;
-        gap: 20px;
-        text-align: center;
-    }
-    .banner_main .banner_rihgt{
-        order: 1;
-    }
-    .banner_main .banner_left{
-        order: 2;
-    }
-    .banner_left h1{
-        font-size: 32px;
-        line-height: 40px;
-    }
-    .banner_left p{
-        font-size: 14px;
-        line-height: 18px;
-        padding: 18px 0px;
-    }
-    .banner_left button{
-        font-size: 16px;
-        line-height: 30px;
-    }
-    .Curriculum{
-        padding: 40px 0px;
-    }
-    .Curriculum_box_contain{
-        grid-template-columns: 1fr;
-        margin: 0px;
-    }
-    .Curriculum_header h2{
-        font-size: 26px;
-    }
-    .stroies{
-        padding: 40px 0px;
-    }
-    .stories_content{
-        padding: 20px 0px;
-    }
-    .stories_box h3{
-        padding: 0px 20px 20px 20px;
-        font-size: 9px;
-        line-height: 17px;
-    }
-    .date_position{
-        top: -8%;
-    }
-    .date_position h4{
-        font-size: 9px;
-        padding: 6px 11px;
-    }
-    .stories_button button{
-        padding: 0px 37px;
-    }
-    .footer_left,.footer_meddle,.footer_right,.stroies_right{
-        width: 100%;
-    }
-    .footer_main{
-        flex-direction: column;
-    }
-    .footer{
-        padding: 60px 0px;
-    }
-    .footer_left h2{
-        font-size: 35px;
-    }
-    .footer_left p{
-        font-size: 16px;
-        padding-top:22px;
-    }
-    .footer_right{
-        margin-top: -20px;
-    }
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  header {
+    border: 1px solid #fea301;
+  }
+  .nav .nav_list_main,
+  .nav h2,
+  .nav_button,
+  .curriculum_bottom,
+  .stroies_left {
+    display: none;
+  }
+  .nav_icon {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .banner .banner_main {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+  .banner_main .banner_rihgt {
+    order: 1;
+  }
+  .banner_main .banner_left {
+    order: 2;
+  }
+  .banner_left h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .banner_left p {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 18px 0px;
+  }
+  .banner_left button {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .Curriculum {
+    padding: 40px 0px;
+  }
+  .Curriculum_box_contain {
+    grid-template-columns: 1fr;
+    margin: 0px;
+  }
+  .Curriculum_header h2 {
+    font-size: 26px;
+  }
+  .stroies {
+    padding: 40px 0px;
+  }
+  .stories_content {
+    padding: 20px 0px;
+  }
+  .stories_box h3 {
+    padding: 0px 20px 20px 20px;
+    font-size: 9px;
+    line-height: 17px;
+  }
+  .date_position {
+    top: -8%;
+  }
+  .date_position h4 {
+    font-size: 9px;
+    padding: 6px 11px;
+  }
+  .stories_button button {
+    padding: 0px 37px;
+  }
+  .footer_left,
+  .footer_meddle,
+  .footer_right,
+  .stroies_right {
+    width: 100%;
+  }
+  .footer_main {
+    flex-direction: column;
+  }
+  .footer {
+    padding: 60px 0px;
+  }
+  .footer_left h2 {
+    font-size: 35px;
+  }
+  .footer_left p {
+    font-size: 16px;
+    padding-top: 22px;
+  }
+  .footer_right {
+    margin-top: -20px;
+  }
 }
-@media screen and (min-width:576px){
-    .nav_icon{
-        display: none;
-    }
+@media screen and (min-width: 576px) {
+  .nav_icon {
+    display: none;
+  }
 }
 /*-------------------- Responsive Design End --------------------*/
