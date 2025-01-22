@@ -41,6 +41,12 @@ button{
     font-weight:700;
     font-style: normal;
 }
+.marqu_1{
+    color: #FEA301;
+}
+.marqu_2{
+    color: #01ACFD;
+}
 .raleway {
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
@@ -147,6 +153,12 @@ button{
     justify-content: end;
 }
 /*-------------------- Banner Section end --------------------*/
+/*--------------------Marquee Section start --------------------*/
+.marque{
+    padding: 40px 0px 0px 0px;
+    font-size: 36px;
+}
+/*-------------------- Marquee Section end --------------------*/
 /*--------------------Curriculum Section start --------------------*/
 .Curriculum{
     background: url(../assets/bg.png);
@@ -261,7 +273,55 @@ button{
 }
 .stroies_left{
     width: 45%;
-    visibility: hidden;
+}
+.stories_box1{
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.stories_box1 img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+    -webkit-border-radius: 16px 16px 0px 0px;
+    -moz-border-radius: 16px 16px 0px 0px;
+    -ms-border-radius: 16px 16px 0px 0px;
+    -o-border-radius: 16px 16px 0px 0px;
+}
+.stories_box1 h3{
+    padding: 0px 38px 34px 38px;
+    font-size: 24px;
+    line-height: 38.35px;
+    color: rgb(0, 0, 0);
+}
+.stories_box1 p{
+    padding: 58px 38px 47px 38px;
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 28.76px;
+    color: rgb(102, 102, 102);
+}
+
+.date_position1{
+    position: relative;
+    top: -23px;
+    left: 38px;
+}
+.date_position1 h4{
+    font-size: 15.34px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    padding: 9px 19px;
+    border-radius: 47.93px;
+    -webkit-border-radius: 47.93px;
+    -moz-border-radius: 47.93px;
+    -ms-border-radius: 47.93px;
+    -o-border-radius: 47.93px;
+    background-color: #3CD8E8;
+    display: inline-block;
 }
 .stroies_right{
     width: 53%;
@@ -309,6 +369,17 @@ button{
     line-height: 28.76px;
     color: rgb(0, 0, 0);
     padding: 0px 0px 34px 37px;
+}
+.stories_button{
+    text-align: center;
+}
+.stories_button button{
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    padding: 0px 37px;
 }
 /*-------------------- Stories Section end --------------------*/
 /*--------------------Footer Section start --------------------*/
@@ -427,11 +498,22 @@ button{
         grid-template-columns: 1fr;
         margin: 0px;
     }
+    .Curriculum_header h2{
+        font-size: 26px;
+    }
+    .stroies{
+        padding: 40px 0px;
+    }
+    .stories_content{
+        padding: 20px 0px;
+    }
     .stories_box h3{
         padding: 0px 20px 20px 20px;
+        font-size: 9px;
+        line-height: 17px;
     }
     .date_position{
-        top: -5%;
+        top: -6%;
     }
     .date_position h4{
         font-size: 9px;
@@ -445,6 +527,9 @@ button{
     }
     .footer{
         padding: 60px 0px;
+    }
+    .footer_left h2{
+        font-size: 35px;
     }
 
 }
