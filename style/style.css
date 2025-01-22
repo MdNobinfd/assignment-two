@@ -41,12 +41,6 @@ button{
     font-weight:700;
     font-style: normal;
 }
-.marqu_1{
-    color: #FEA301;
-}
-.marqu_2{
-    color: #01ACFD;
-}
 .raleway {
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
@@ -101,8 +95,18 @@ button{
     line-height: 30px;
     color: rgb(255, 255, 255);
     padding: 10px 60px;
-    border: transparent;
+    border:1px solid transparent;
     cursor: pointer;
+    transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
+    -webkit-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
+    -moz-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
+    -ms-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
+    -o-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
+}
+.nav_button button:hover{
+    background-color: white;
+    color: #FEA301;
+    border: 1px solid #FEA301;
 }
 /*-------------------- Header And Nav Section end --------------------*/
 /*-------------------- Banner Section start --------------------*/
@@ -144,6 +148,17 @@ button{
     -moz-border-radius:12px;
     -ms-border-radius:12px;
     -o-border-radius:12px;
+    border: 1px solid transparent;
+    transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
+    -webkit-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
+    -moz-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
+    -ms-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
+    -o-transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
+}
+.banner_left button:hover{
+    background-color: white;
+    color: black;
+    border:1px solid black;
 }
 .banner_rihgt img{
     width: 100%;
@@ -157,6 +172,12 @@ button{
 .marque{
     padding: 40px 0px 0px 0px;
     font-size: 36px;
+}
+.marqu_1{
+    color: #FEA301;
+}
+.marqu_2{
+    color: #01ACFD;
 }
 /*-------------------- Marquee Section end --------------------*/
 /*--------------------Curriculum Section start --------------------*/
@@ -339,7 +360,7 @@ button{
 }
 .date_position{
     position: relative;
-    top: -8%;
+    top: -7%;
     left: 12%;
 }
 .date_position h4{
@@ -355,6 +376,9 @@ button{
     -o-border-radius: 47.93px;
     background-color: #95B226;
     display: inline-block;
+}
+.stroies_right .stories_box:nth-child(2) .date_position h4{
+    background-color: #5D58F0;
 }
 .stories_box img{
     width: 100%;
@@ -379,7 +403,14 @@ button{
     color: rgb(255, 255, 255);
     border-radius: 12px;
     background: rgb(17, 17, 17);
-    padding: 0px 37px;
+    padding: 10px 61px;
+    transition: border 0.5s, color 0.5s, background-color 0.5s ease-in-out ;
+    border: 1px solid transparent;
+}
+.stories_button button:hover{
+    background-color: white;
+    color: black;
+    border:1px solid black;
 }
 /*-------------------- Stories Section end --------------------*/
 /*--------------------Footer Section start --------------------*/
@@ -513,11 +544,14 @@ button{
         line-height: 17px;
     }
     .date_position{
-        top: -6%;
+        top: -8%;
     }
     .date_position h4{
         font-size: 9px;
         padding: 6px 11px;
+    }
+    .stories_button button{
+        padding: 0px 37px;
     }
     .footer_left,.footer_meddle,.footer_right,.stroies_right{
         width: 100%;
@@ -531,7 +565,13 @@ button{
     .footer_left h2{
         font-size: 35px;
     }
-
+    .footer_left p{
+        font-size: 16px;
+        padding-top:22px;
+    }
+    .footer_right{
+        margin-top: -20px;
+    }
 }
 @media screen and (min-width:576px){
     .nav_icon{
