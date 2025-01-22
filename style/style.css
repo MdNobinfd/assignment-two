@@ -261,9 +261,54 @@ button{
 }
 .stroies_left{
     width: 45%;
+    visibility: hidden;
 }
 .stroies_right{
-    width: 50%;
+    width: 53%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+}
+.stories_box{
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.date_position{
+    position: relative;
+    top: -8%;
+    left: 12%;
+}
+.date_position h4{
+    font-size: 15.34px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    padding: 9px 19px;
+    border-radius: 47.93px;
+    -webkit-border-radius: 47.93px;
+    -moz-border-radius: 47.93px;
+    -ms-border-radius: 47.93px;
+    -o-border-radius: 47.93px;
+    background-color: #95B226;
+    display: inline-block;
+}
+.stories_box img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+    -webkit-border-radius: 16px 16px 0px 0px;
+    -moz-border-radius: 16px 16px 0px 0px;
+    -ms-border-radius: 16px 16px 0px 0px;
+    -o-border-radius: 16px 16px 0px 0px;
+}
+.stories_box h3{
+    font-size: 15.34px;
+    line-height: 28.76px;
+    color: rgb(0, 0, 0);
+    padding: 0px 0px 34px 37px;
 }
 /*-------------------- Stories Section end --------------------*/
 /*--------------------Footer Section start --------------------*/
@@ -344,7 +389,7 @@ button{
     header{
         border: 1px solid #FEA301;
     }
-    .nav .nav_list_main ,.nav h2, .nav_button,.curriculum_bottom{
+    .nav .nav_list_main ,.nav h2, .nav_button,.curriculum_bottom,.stroies_left{
         display: none;
     }
     .nav_icon{
@@ -382,7 +427,17 @@ button{
         grid-template-columns: 1fr;
         margin: 0px;
     }
-    .footer_left,.footer_meddle,.footer_right{
+    .stories_box h3{
+        padding: 0px 20px 20px 20px;
+    }
+    .date_position{
+        top: -5%;
+    }
+    .date_position h4{
+        font-size: 9px;
+        padding: 6px 11px;
+    }
+    .footer_left,.footer_meddle,.footer_right,.stroies_right{
         width: 100%;
     }
     .footer_main{
